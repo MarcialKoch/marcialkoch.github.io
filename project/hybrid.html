@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name='viewport'
+      content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <title>hybrid</title>
+    <link rel='stylesheet' href='../css/style.css'/>
+    <link rel='stylesheet' href='../css/project.css'/>
+    <link rel='stylesheet' href='../css/flexslider.css'/>
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,700,700i&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class='menu-container'>
+      <div class='menu'>
+        <a class="back"href="../index.html">back</a>
+        <div class='project-name'>hybrid</div>
+        <div class='project-year'>2016</div>
+      </div>
+      </div>
+      <div class="line"></div>
+
+      <div class="project-info-container">
+      <div class="project-info">
+        <label for="german" id="germanbutton" class="project-info-language">de</label>
+        <input type="radio" name="lang" id="german" checked>
+        <label for="english" id="englishbutton"class="project-info-language">en</label>
+        <input type="radio" name="lang" id="english">
+     </div>
+
+     <div class="project-info">
+        <p class="project-info-item german-text">Unsere Mobile Applikation ermöglicht es, die Umgebung zwischen den in Zürich verteilten Festival Schauplätzen frei zu erkunden und den Weg zu den einzelnen Ausstellungen auf experimentelle Weise zu erfahren. Der dafür vorgesehene Entdecker Modus kann dementsprechend personalisiert werden, sodass er dahin führt wo der Besucher interessante Werke vorfindet.</p>
+        <p class="project-info-item english-text">Our mobile application makes it possible to freely explore the environment between the festival locations distributed in Zurich and to experience the way to the individual exhibitions in an experimental way. The explorer mode can be personalized so that the visitor can find artworks he is interested in.</p>
+      </div>
+      </div>
+      <div class="project-team">
+        <p class="project-team-item">in collaboration with</p>
+        <p class="project-team-item">jonas morgentaler</p>
+      </div>
+
+    <div class="project-grid-container">
+      <div class="project-grid">
+        <div class="first_slider flexslider">
+          <ul class="slides">
+            <li>
+              <img src="../images/project/hybrid/01.jpg" style="width:100%" data-infotext="finding the way to the festival locations">
+            </li>
+            <li>
+              <img src="../images/project/hybrid/02.jpg" style="width:100%" data-infotext="homescreen and explore screen">
+            </li>
+            <li>
+              <img src="../images/project/hybrid/03.jpg" style="width:100%" data-infotext="explore screen">
+            </li>
+            <li>
+              <img src="../images/project/hybrid/04.jpg" style="width:100%" data-infotext="explore screen">
+            </li>
+            <li>
+              <img src="../images/project/hybrid/05.jpg" style="width:100%" data-infotext="landing screen">
+            </li>
+          </ul>
+        </div>
+        <div class="slideshow-text1"></div>
+
+      </div>
+      <div class="category-container">
+        <div class="category"></div>
+        <div class="category"></div>
+        <div class="category"></div>
+        <div class="category"></div>
+        <div class="category"></div>
+        <div class="category"></div>
+      </div>
+    </div>
+
+    <div class="project-text-container">
+        <div class="project-text">
+          <p class="project-text-item german-text">Im Frühjahr 2020 findet erstmals die Digital Art Zurich statt. Unsere Aufgabe bestand darin eine Mobile Applikation zu erstellen, welche als Guide am Festival funktioniert und Informationen zu den Werken enthält. Weiter soll es auch möglich sein, über die Applikation Kunstwerke zu bewerten, um schlussendlich einen Publikumspreis zu bestimmen.
+          <br><br>
+          Da es ein digitales Kunst Festival ist, stellt die Applikation das erste Werk dar, welchem der Besucher begegnet. Um dies zu erreichen, arbeiten wir mit dreidimensionalen Icons, welche sich um die eigene Achse drehen und durch welche man zu den Untersektionen gelangt, sowie mit einem Entdecker Modus, der eine sinnliche Erfahrung schafft.
+          <br><br>
+          Der Entdecker Modus, das Herzstück unserer Applikation, empfängt die elektromagnetischen Wellen der digitalen Kunstwerken und verformt sich anhand dieser Wellen. Unterstützt wird das visuelle Element durch Vibrationen und Ton, um eine allumfassende Erfahrung zu schaffen.</p>
+
+          <p class="project-text-item english-text">Digital Art Zurich will take place for the first time in spring 2020. Our task was to create a mobile application that functions as a guide at the festival and contains information about the artworks. It should also be possible to evaluate works of art via the application in order to finally determine an audience price.
+          <br><br>
+          Since it is a digital art festival, the application is the first work that visitors will face. To achieve this, we work with three-dimensional icons that rotate on their own axis and through which one reaches the sub-sections, as well as an explorer mode that creates a sensual experience.
+          <br><br>
+          The discoverer mode, the heart of our application, receives the electromagnetic waves of the digital artworks and deforms itself with these waves. The visual element is supported by vibrations and sound to create an immersive experience.</p>
+        </div>
+      </div>
+
+      <div class="endofpage">
+      </div>
+
+      <!-- jQuery -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+      <!-- FlexSlider -->
+      <script defer src="../js/jquery.flexslider.js"></script>
+
+      <script type="text/javascript">
+
+        // $(function(){
+        //   SyntaxHighlighter.all();
+        // });
+        $(window).load(function() {
+   $('.first_slider.flexslider').flexslider({
+       animation: "fade",
+       controlsContainer: '.flex-container'
+
+   });
+   $('.second_slider.flexslider').flexslider({
+       animation: "fade",
+       controlsContainer: '.flex-container'
+   });
+ });
+      </script>
+
+      <script src="../js/main.js"></script>
+
+  </body>
+</html>

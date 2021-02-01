@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name='viewport'
+      content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <title>lichtwal</title>
+    <link rel='stylesheet' href='../css/style.css'/>
+    <link rel='stylesheet' href='../css/project.css'/>
+    <link rel='stylesheet' href='../css/flexslider.css'/>
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,700,700i&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class='menu-container'>
+      <div class='menu'>
+        <a class="back"href="../index.html">back</a>
+        <div class='project-name'>lichtwal</div>
+        <div class='project-year'>2019</div>
+      </div>
+      </div>
+      <div class="line"></div>
+
+      <div class="project-info-container">
+      <div class="project-info">
+        <label for="german" id="germanbutton" class="project-info-language">de</label>
+        <input type="radio" name="lang" id="german" checked>
+        <label for="english" id="englishbutton"class="project-info-language">en</label>
+        <input type="radio" name="lang" id="english">
+     </div>
+
+     <div class="project-info">
+        <p class="project-info-item german-text">Lichtwal ist ein akustisch-interaktives Objekt, das dem Licht eine eigene Stimme verleiht. Indem der Würfel durch die Luft bewegt wird, erlaubt er uns, die Lichtklänge zu hören und zu beeinflussen.</p>
+        <p class="project-info-item english-text">Lichtwal is a sonic interactive object that gives light its own voice. By moving it through the air, the cube allows us to hear and influence the sounds of light.</p>
+      </div>
+      </div>
+      <div class="project-team">
+        <p class="project-team-item">in collaboration with</p>
+        <p class="project-team-item">claudia buck</p>
+        <p class="project-team-item">fiona good</p>
+      </div>
+
+      </div>
+      <div class="category-container">
+        <div class="category"></div>
+        <div class="category"></div>
+        <div class="category"></div>
+        <div class="category"></div>
+        <div class="category"></div>
+        <div class="category"></div>
+      </div>
+    </div>
+
+    <div class="project-grid-container">
+      <div class="project-grid">
+        <iframe class="project-video" src="https://player.vimeo.com/video/382889885?portrait=false&title=false&byline=false"frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="project-text-container">
+        <div class="project-text">
+          <p class="project-text-item german-text">Lichtwal untersucht die Frage "Wie klingt Licht?". Es verleiht etwas Stummem eine Stimme und eröffnet die Möglichkeit, durch Licht Musik zu machen. Der Würfel selbst speist sich aus einer Lichtquelle. Wenn er sich mit Licht gefüllt hat, kann er verwendet werden, um die Klänge des Lichts zu enthüllen. Indem wir ihn durch die Luft bewegen, können wir dessen Klänge beeinflussen und verschiedene Stimmen hören. Mit der Zeit verliert der Würfel seine Stimme und wird leer. Dann muss er zu einer starken, stationären Lichtquelle zurückgebracht werden, um sich wieder aufzuladen.
+          </p>
+
+          <p class="project-text-item english-text">Lichtwal explores the question of “how does light sound like?”. It gives something mute a voice, uncovering the possibility of making music through light. The cube itself feeds from a light source. Once it has replenished itself in light, can it be used to reveal the sounds of light. By moving it through the air, we can influence its sounds and listen to its different voices. Over time, the cube loses its voice and becomes empty. It is then when it needs to be returned to a strong, stationary light source in order to recharge itself.
+          </p>
+        </div>
+      </div>
+
+      <div class="endofpage">
+      </div>
+
+      <!-- jQuery -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+      <!-- FlexSlider -->
+      <script defer src="../js/jquery.flexslider.js"></script>
+
+      <script type="text/javascript">
+
+        // $(function(){
+        //   SyntaxHighlighter.all();
+        // });
+        $(window).load(function() {
+   $('.first_slider.flexslider').flexslider({
+       animation: "fade",
+       controlsContainer: '.flex-container'
+
+   });
+   $('.second_slider.flexslider').flexslider({
+       animation: "fade",
+       controlsContainer: '.flex-container'
+   });
+ });
+      </script>
+
+      <script src="../js/main.js"></script>
+
+  </body>
+</html>

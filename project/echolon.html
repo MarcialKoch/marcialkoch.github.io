@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name='viewport'
+      content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <title>echolon</title>
+    <link rel='stylesheet' href='../css/style.css'/>
+    <link rel='stylesheet' href='../css/project.css'/>
+    <link rel='stylesheet' href='../css/flexslider.css'/>
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,700,700i&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class='menu-container'>
+      <div class='menu'>
+        <a class="back"href="../index.html">back</a>
+        <div class='project-name'>echolon</div>
+        <div class='project-year'>2016</div>
+      </div>
+      </div>
+      <div class="line"></div>
+
+      <div class="project-info-container">
+      <div class="project-info">
+        <label for="german" id="germanbutton" class="project-info-language">de</label>
+        <input type="radio" name="lang" id="german" checked>
+        <label for="english" id="englishbutton"class="project-info-language">en</label>
+        <input type="radio" name="lang" id="english">
+     </div>
+
+     <div class="project-info">
+        <p class="project-info-item german-text">Echolon nimmt die Schallwellen im Raum auf und projiziert sie an die Decke. Somit wird das für den Menschen unsichtbare Medium Schall sichtbar. Die Projektion visualisiert dabei die auditive Stimmung im Raum.</p>
+        <p class="project-info-item english-text">Echolon picks up the sound waves within a space and projects them onto the ceiling. Thus, the medium of sound, which is invisible to humans, becomes visible. The projection visualizes the auditory ambience in the room.</p>
+      </div>
+      </div>
+
+    <div class="project-grid-container">
+      <div class="project-grid">
+        <div class="first_slider flexslider">
+          <ul class="slides">
+            <li>
+              <img src="../images/project/echolon/01.jpg" style="width:100%" data-infotext="echolon setup">
+            </li>
+            <li>
+              <img src="../images/project/echolon/02.jpg" style="width:100%" data-infotext="lamp for the projection">
+            </li>
+            <li>
+              <img src="../images/project/echolon/03.jpg" style="width:100%" data-infotext="electromagnetic valves">
+            </li>
+            <li>
+              <img src="../images/project/echolon/04.jpg" style="width:100%" data-infotext="water drops into the bowl">
+            </li>
+            <li>
+              <img src="../images/project/echolon/05.jpg" style="width:100%" data-infotext="hardware - controlled over arduino">
+            </li>
+          </ul>
+        </div>
+        <div class="slideshow-text1"></div>
+
+      </div>
+      <div class="category-container">
+        <div class="category"></div>
+        <div class="category"></div>
+        <div class="category"></div>
+        <div class="category"></div>
+        <div class="category"></div>
+        <div class="category"></div>
+      </div>
+    </div>
+
+    <div class="project-grid-container">
+      <div class="project-grid">
+        <iframe class="project-video" src="https://player.vimeo.com/video/393259433?portrait=false&title=false&byline=false"frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="project-text-container">
+        <div class="project-text">
+          <p class="project-text-item german-text">Über drei kleine Mikrofone wird der Raum aus verschiedenen Richtung akustisch erfasst. Die Signale werden an drei Elektromagnet Ventile weitergeleitet, welche anhand der Lautstärke schneller öffnen un schliessen. Wenn es lauter wird, öffnet und schliesst das Ventil schneller, was dazu führt das mehr Wasser durchfliesst. Das Wasser tropft in eine Glasschale, welche durch ein Licht an die Decke projiziert wird. An der Decke werden die Wellen im Wasser sichtbar, welche aus den Schallwellen im Raum resultieren.
+          <br><br>
+          Das Design ist angelehnt an eine alte Appartur nach dem ersten Weltkrieg. Dieser Entscheid beruht auf das digitale-analoge Zusammenspiel, welches zu dieser Zeit angelaufen ist. Ganz bewusst wird der Besucher auch aufgefordert den Wassertank darüber mit einem Schöpflöffel aus der Schüssel aufzufüllen. Somit wird eine Partizipation mit den Besuchern erreicht , ohne welches Echolon nicht mehr funktionieren würde.
+          </p>
+
+          <p class="project-text-item english-text">The room is acoustically recorded from different directions via three small microphones. The signals are transmitted to three electromagnetic valves, which open and close faster depending on the volume. When it gets louder, the valve opens and closes faster, which leads to more water flowing through. The water drips into a glass bsowl, which is projected onto the ceiling by a lamp. On the ceiling the waves in the water become visible, which result from the sound waves in the space.
+          <br><br>
+          The design is based on an old apparture after the first world war. This decision is based on the digital-analog interaction that was initiated at that time. The visitor is also asked to fill the water tank above with a ladle from the bowl. Thus, a participation with the visitors is achieved, without which Echolon would no longer function.
+          </p>
+        </div>
+      </div>
+
+      <div class="project-grid-container">
+        <div class="project-grid">
+        <img class="additional-item-vert" width="auto" height="628px" src="../images/project/echolon/06.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="endofpage">
+      </div>
+
+      <!-- jQuery -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+      <!-- FlexSlider -->
+      <script defer src="../js/jquery.flexslider.js"></script>
+
+      <script type="text/javascript">
+
+        // $(function(){
+        //   SyntaxHighlighter.all();
+        // });
+        $(window).load(function() {
+   $('.first_slider.flexslider').flexslider({
+       animation: "fade",
+       controlsContainer: '.flex-container'
+
+   });
+   $('.second_slider.flexslider').flexslider({
+       animation: "fade",
+       controlsContainer: '.flex-container'
+   });
+ });
+      </script>
+
+      <script src="../js/main.js"></script>
+
+  </body>
+</html>

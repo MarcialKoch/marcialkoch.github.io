@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name='viewport'
+      content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <title>foam</title>
+    <link rel='stylesheet' href='../css/style.css'/>
+    <link rel='stylesheet' href='../css/project.css'/>
+    <link rel='stylesheet' href='../css/flexslider.css'/>
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,700,700i&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class='menu-container'>
+      <div class='menu'>
+        <a class="back"href="../index.html">back</a>
+        <div class='project-name'>foam</div>
+        <div class='project-year'>2018</div>
+      </div>
+      </div>
+      <div class="line"></div>
+
+      <div class="project-info-container">
+      <div class="project-info">
+        <label for="german" id="germanbutton" class="project-info-language">de</label>
+        <input type="radio" name="lang" id="german" checked>
+        <label for="english" id="englishbutton"class="project-info-language">en</label>
+        <input type="radio" name="lang" id="english">
+     </div>
+
+     <div class="project-info">
+        <p class="project-info-item german-text">Experimente und Untersuchungen zum Verhalten, sowie Struktur von Schaum. Das Ziel war die Erstellung eines Zoetrop um ein Verhaltenspunkt nachzuahmen.</p>
+        <p class="project-info-item english-text">Experiments and investigations on the behavior and structure of foam. The goal was to create a zoetrope to imitate a point of behavior.</p>
+      </div>
+      </div>
+      <div class="project-team">
+        <p class="project-team-item">in collaboration with</p>
+        <a href="https://janina.io/"class="project-team-item">janina tanner</a>
+        <p class="project-team-item">jennifer duarte</p>
+        <p class="project-team-item">randy chen</p>
+      </div>
+
+    <div class="project-grid-container">
+      <div class="project-grid">
+      <img class="additional-item-vert" width="auto" height="628px" src="../images/project/foam/05.gif" alt="">
+      </div>
+    </div>
+
+    <div class="project-grid-container">
+      <div class="project-grid">
+        <div class="first_slider flexslider">
+          <ul class="slides">
+            <li>
+              <img src="../images/project/foam/01.jpg" style="width:100%" data-infotext="close-up of boiling water and oil">
+            </li>
+            <li>
+              <img src="../images/project/foam/02.jpg" style="width:100%" data-infotext="sliced polyurethane block">
+            </li>
+            <li>
+              <img src="../images/project/foam/03.jpg" style="width:100%" data-infotext="silicone negative of styrofoam balls">
+            </li>
+            <li>
+              <img src="../images/project/foam/04.jpg" style="width:100%" data-infotext="exhibition with all experiments shown">
+            </li>
+          </ul>
+        </div>
+        <div class="slideshow-text1"></div>
+
+      </div>
+      <div class="category-container">
+        <div class="category"></div>
+        <div class="category"></div>
+        <div class="category"></div>
+        <div class="category"></div>
+        <div class="category"></div>
+        <div class="category"></div>
+      </div>
+    </div>
+
+    <div class="project-text-container">
+        <div class="project-text">
+          <p class="project-text-item german-text">Entstanden sind verschiedene Zoetrops mit Hilfe unterschiedlicher Fabrikationsmethoden. Zusätzlich erschufen wir Objekte zum anfassen und ausprobieren aus Materialien wie Silikon, Teig oder Polyurethan.
+          <br><br>
+          Die Grundstruktur einer eines Seifenblasen Gebildes fundiert auf dem Voronoi Muster. Um die Dynamik dieses Musters darzustellen, nutzen wir den Lasercutter um die Formen aus einer dünnen MDF auszuschneiden.
+          <br><br>
+          Um zu zeigen wie sich Schaum an ein definiertes Gefäss anpasst, druckten wir verschiedene Stadien dieses Prozesses auf einem 3D Drucker mit transparentem Filament.</p>
+
+          <p class="project-text-item english-text">Different zoetrops have been created using diverse manufacturing methods.  In addition, we created objects to touch and play using materials such as silicone, dough or polyurethane.
+          <br><br>
+          The basic structure of a soap bubble structure is grounded on the voronoi pattern. To show the dynamics of this pattern, we use the laser cutter to carve the shapes out of a thin MDF.
+          <br><br>
+          To show how foam adapts to a defined container, we printed out different stages of this process on a 3D printer with transparent filament.</p>
+        </div>
+      </div>
+
+      <div class="project-grid-container">
+        <div class="project-grid">
+        <img class="additional-item-vert" width="auto" height="628px" src="../images/project/foam/06.gif" alt="">
+        </div>
+      </div>
+
+      <div class="project-grid-container">
+        <div class="project-grid">
+        <img class="additional-item-vert" width="auto" height="628px" src="../images/project/foam/07.gif" alt="">
+        </div>
+      </div>
+
+      <div class="project-grid-container">
+        <div class="project-grid">
+        <img class="additional-item-vert" width="auto" height="628px" src="../images/project/foam/08.gif" alt="">
+        </div>
+      </div>
+
+      <div class="endofpage">
+      </div>
+
+      <!-- jQuery -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+      <!-- FlexSlider -->
+      <script defer src="../js/jquery.flexslider.js"></script>
+
+      <script type="text/javascript">
+
+        // $(function(){
+        //   SyntaxHighlighter.all();
+        // });
+        $(window).load(function() {
+   $('.first_slider.flexslider').flexslider({
+       animation: "fade",
+       controlsContainer: '.flex-container'
+
+   });
+   $('.second_slider.flexslider').flexslider({
+       animation: "fade",
+       controlsContainer: '.flex-container'
+   });
+ });
+      </script>
+
+      <script src="../js/main.js"></script>
+
+  </body>
+</html>
