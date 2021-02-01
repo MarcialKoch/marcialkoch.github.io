@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name='viewport'
+      content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <title>out of space</title>
+    <link rel='stylesheet' href='../css/style.css'/>
+    <link rel='stylesheet' href='../css/project.css'/>
+    <link rel='stylesheet' href='../css/flexslider.css'/>
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,700,700i&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class='menu-container'>
+      <div class='menu'>
+        <a class="back"href="../index.html">back</a>
+        <div class='project-name'>out of space</div>
+        <div class='project-year'>2016</div>
+      </div>
+      </div>
+      <div class="line"></div>
+
+      <div class="project-info-container">
+      <div class="project-info">
+        <label for="german" id="germanbutton" class="project-info-language">de</label>
+        <input type="radio" name="lang" id="german" checked>
+        <label for="english" id="englishbutton"class="project-info-language">en</label>
+        <input type="radio" name="lang" id="english">
+     </div>
+
+     <div class="project-info">
+        <p class="project-info-item german-text">Eine fotografische Nachbildung einer Sternwarte in der Brauerei Baar, Zug CH.</p>
+        <p class="project-info-item english-text">A photographic replica of an observatory in the brewery Baar, Zug CH.</p>
+      </div>
+      </div>
+
+    <div class="project-grid-container">
+      <div class="project-grid">
+      <img class="additional-item-vert" width="auto" height="628px" src="../images/project/outofspace/01.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="project-grid-container">
+      <div class="project-grid">
+      <img class="additional-item-vert" width="auto" height="628px" src="../images/project/outofspace/02.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="project-grid-container">
+      <div class="project-grid">
+      <img class="additional-item-vert" width="auto" height="628px" src="../images/project/outofspace/03.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="project-grid-container">
+      <div class="project-grid">
+      <img class="additional-item-vert" width="auto" height="628px" src="../images/project/outofspace/04.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="project-grid-container">
+      <div class="project-grid">
+      <img class="additional-item-vert" width="auto" height="628px" src="../images/project/outofspace/05.jpg" alt="">
+      </div>
+    </div>
+
+
+      <div class="endofpage">
+      </div>
+
+      <!-- jQuery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+      <!-- FlexSlider -->
+      <script defer src="../js/jquery.flexslider.js"></script>
+
+      <script type="text/javascript">
+
+        // $(function(){
+        //   SyntaxHighlighter.all();
+        // });
+        $(window).load(function() {
+   $('.first_slider.flexslider').flexslider({
+       animation: "fade",
+       controlsContainer: '.flex-container'
+
+   });
+   $('.second_slider.flexslider').flexslider({
+       animation: "fade",
+       controlsContainer: '.flex-container'
+   });
+ });
+      </script>
+
+      <script src="../js/main.js"></script>
+
+  </body>
+</html>

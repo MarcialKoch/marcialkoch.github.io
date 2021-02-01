@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name='viewport'
+      content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <title>sabine</title>
+    <link rel='stylesheet' href='../css/style.css'/>
+    <link rel='stylesheet' href='../css/project.css'/>
+    <link rel='stylesheet' href='../css/flexslider.css'/>
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,700,700i&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class='menu-container'>
+      <div class='menu'>
+        <a class="back"href="../index.html">back</a>
+        <div class='project-name'>sabine</div>
+        <div class='project-year'>2018</div>
+      </div>
+      </div>
+      <div class="line"></div>
+
+      <div class="project-info-container">
+      <div class="project-info">
+        <label for="german" id="germanbutton" class="project-info-language">de</label>
+        <input type="radio" name="lang" id="german" checked>
+        <label for="english" id="englishbutton"class="project-info-language">en</label>
+        <input type="radio" name="lang" id="english">
+     </div>
+
+     <div class="project-info">
+        <p class="project-info-item german-text">Sabine ist ein Objekt, welches die Thematik von Wasserkraft aufgreift. Durch das auf den Kopf stellen wird potenzielle Energie generiert und freigesetzt.</p>
+        <p class="project-info-item english-text">Sabine is an object, which addresses the topic of hydropower. By turning it upside down, potential energy is generated and released.</p>
+      </div>
+      </div>
+      <div class="project-team">
+        <p class="project-team-item">in collaboration with</p>
+        <a href="https://www.melanieabbet.ch/"class="project-team-item">mélanie abbet</a>
+        <a href="https://www.michelleschmid.com//"class="project-team-item">michelle schmid</a>
+      </div>
+
+    <div class="project-grid-container">
+      <div class="project-grid">
+      <img class="additional-item-vert" width="auto" height="628px" src="../images/project/sabine/01.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="project-grid-container">
+      <div class="project-grid">
+        <div class="first_slider flexslider">
+          <ul class="slides">
+            <li>
+              <img src="../images/project/sabine/02.jpg" style="width:100%" data-infotext="two salt containers at both ends">
+            </li>
+            <li>
+              <img src="../images/project/sabine/03.jpg" style="width:100%" data-infotext="sabine">
+            </li>
+            <li>
+              <img src="../images/project/sabine/04.jpg" style="width:100%" data-infotext="the turbine in the middle">
+            </li>
+            <li>
+              <img src="../images/project/sabine/05.jpg" style="width:100%" data-infotext="tilting interaction with sabine controls the speed of the turbine">
+            </li>
+          </ul>
+        </div>
+        <div class="slideshow-text1"></div>
+
+      </div>
+      <div class="category-container">
+        <div class="category"></div>
+        <div class="category"></div>
+        <div class="category"></div>
+        <div class="category"></div>
+        <div class="category"></div>
+        <div class="category"></div>
+      </div>
+    </div>
+
+    <div class="project-grid-container">
+      <div class="project-grid">
+        <iframe class="project-video" src="https://player.vimeo.com/video/382929732?portrait=false&title=false&byline=false"frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="project-text-container">
+        <div class="project-text">
+          <p class="project-text-item german-text">Das Sanduhr ähnliche Objekt besteht aus 3 Teilen. Zwei Sandbehälter und einer Turbine in der Mitte. Beim drehen kalkuliert ein Gyroskop die potenzielle Energie und verändert demnach die Drehgeschwindigkeit der Turbine. Der Sand wird durch die Turbine geschleudert und landet in dem anderen Sandbehälter, bereit für eine erneute Drehung.
+          <br><br>
+          Sabine diente als Wasserkraft Input für die Visualisierung Blitzkraftwerk im Zauberwald Lenzerheide 2018. Um für eine 1 Wöchige Funktion in eisig kalten Bedingungen zu sorgen, wurde ein zweiter Prototyp konzipiert.
+          </p>
+
+          <p class="project-text-item english-text">The object similar to an hourglass is composed of 3 parts. Two sand containers and a turbine in the middle. While rotating, a gyroscope calculates the potential energy and thus changes the rotational speed of the turbine. The sand is centrifuged through the turbine and lands in the other sand container, ready for another rotation.
+          <br><br>
+          Sabine served as hydropower input for the visualization Blitzkraftwerk in the Zauberwald Lenzerheide 2018. A second prototype was designed to provide a 1 week operation in freezing temperatures.
+          </p>
+        </div>
+      </div>
+
+      <div class="project-grid-container">
+        <div class="project-grid">
+        <img class="additional-item-vert" width="auto" height="628px" src="../images/project/sabine/07.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="endofpage">
+      </div>
+
+      <!-- jQuery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+      <!-- FlexSlider -->
+      <script defer src="../js/jquery.flexslider.js"></script>
+
+      <script type="text/javascript">
+
+        // $(function(){
+        //   SyntaxHighlighter.all();
+        // });
+        $(window).load(function() {
+   $('.first_slider.flexslider').flexslider({
+       animation: "fade",
+       controlsContainer: '.flex-container'
+
+   });
+   $('.second_slider.flexslider').flexslider({
+       animation: "fade",
+       controlsContainer: '.flex-container'
+   });
+ });
+      </script>
+
+      <script src="../js/main.js"></script>
+
+  </body>
+</html>
