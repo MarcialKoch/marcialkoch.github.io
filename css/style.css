@@ -299,6 +299,7 @@ opacity: 0;
   .project-item-wrap{
     margin-right: 10px;
     width: 46.4%;
+    height: auto;
   }
     .category-container {
     visibility: hidden;
