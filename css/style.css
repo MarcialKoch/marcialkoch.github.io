@@ -125,6 +125,7 @@ img{
 
 .project-item-wrap{
   position: relative;
+  width: 100%;
   align-self: flex-start;
 }
 
