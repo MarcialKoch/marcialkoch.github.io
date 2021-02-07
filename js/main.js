@@ -57,8 +57,10 @@ $('.year-container .year').click(function(){
     $(categories).removeClass('hover');
     $("#" + year).removeClass('hover');
   });
+  $("img").bind('load', function() {
   $('.img-description').each(function() {
     $(this).css({"top":$(this).prev().height()/2});
+});
 });
 if ($(window).width() <= 414) {
 $('#german').click(function() {
