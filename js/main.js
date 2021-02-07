@@ -57,10 +57,15 @@ $('.year-container .year').click(function(){
     $(categories).removeClass('hover');
     $("#" + year).removeClass('hover');
   });
-  $("img").bind('load', function() {
-  $('.img-description').each(function() {
-    $(this).css({"top":$(this).prev().height()/2});
-});
+  $("img").one("load", function() {
+    $('.img-description').each(function() {
+      $(this).css({"top":$(this).prev().height()/2});
+  });
+  }).each(function() {
+    if(this.complete) {
+        $(this).load(); // For jQuery < 3.0
+        // $(this).trigger('load'); // For jQuery >= 3.0
+    }
 });
 if ($(window).width() <= 414) {
 $('#german').click(function() {
