@@ -61,7 +61,7 @@ img{
 }
 
 .project-grid{
-  width: 1140px;
+  width: 79.2%;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -89,7 +89,7 @@ img{
 }
 
 .menu {
-  width: 1130px;
+  width: 78.5%;
   margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
@@ -97,7 +97,7 @@ img{
 
 .line {
   height: 1px;
-  width: 1130px;
+  width: 78.5%;
   border-color: transparent;
   background-color: #ff6114;
   border-width: 0px;
