@@ -249,10 +249,6 @@ opacity: 0;
 .menu{
   width: 522px;
   }
-  img{
-    width: 100%;
-    height: auto;
-  }
 .line{
   width: 522px;
   }
@@ -314,6 +310,10 @@ opacity: 0;
 @media only screen and (max-width: 500px){
   .menu{
     width: 272px;
+  }
+  img{
+    width: 100%;
+    height: auto;
   }
   .line{
     width: 272px;
