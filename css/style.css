@@ -249,6 +249,10 @@ opacity: 0;
 .menu{
   width: 522px;
   }
+  img{
+    width: 100%;
+    height: auto;
+  }
 .line{
   width: 522px;
   }
