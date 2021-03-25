@@ -31,7 +31,7 @@ a{
 }
 
 .project-info {
-  width: 1130px;
+  width: 78.5%;
   margin: 20px 0px;
   color: #ff6114;
   display: flex;
@@ -39,7 +39,7 @@ a{
 }
 
 .project-info-item {
-width: 465px;
+width: 78.5%;
 margin-right: 200px;
 font-weight: 400;
 }
@@ -78,7 +78,7 @@ margin: 0;
 }
 .project-team-item{
   font-family: 'Inter', sans-serif;
-  width: 1130px;
+  width: 78.5%;
   font-weight: 400;
 }
 
@@ -91,7 +91,7 @@ margin: 0;
 }
 .project-exhibited-item{
   font-family: 'Inter', sans-serif;
-  width: 1130px;
+  width: 78.5%;
   font-weight: 400;
 }
 
@@ -102,7 +102,7 @@ margin: 0;
 }
 
 .project-text {
-width: 1130px;
+width: 78.5%;
 display: flex;
 justify-content: flex-start;
 margin-top: 40px;
@@ -153,7 +153,7 @@ margin: 0;
   background-color: #ff6114;
 }
 
-@media only screen and (min-width: 415px) and (max-width: 1100px) {
+@media only screen and (min-width: 501px) and (max-width: 1023px) {
 .flexslider{
   width: 530px;
 }
@@ -167,35 +167,34 @@ a{
   margin-right: 100px;
 }
 .project-info{
-  width: 522px;
+  width: 68%;
 }
 .project-info-item{
   margin-right: 100px;
 }
 .project-team-item{
-  width: 522px;
+  width: 68%;
 }
 .project-text{
-  width: 522px;
+  width: 68%;
 }
 .project-text-item{
   margin-right: 100px;
 }
 .project-video{
-  width: 522px;
-  height: 293px;
+  width: 100%;
 }
 .additional-item-vert{
   height: 348px;
   margin: 0 auto;
 }
 .additional-item-sound{
-  width: 522px;
+  width: 68%;
 }
 }
 
 /* Mobile Styles */
-@media only screen and (max-width: 414px){
+@media only screen and (max-width: 500px){
   .flexslider{
     width: 280px;
   }
@@ -215,35 +214,36 @@ a{
     margin-right: 100px;
   }
   .project-info{
-    width: 272px;
+    width: 88%;
   }
   .project-info-item{
-    width: 272px;
+    width: 88%;
     margin: 0;
   }
   .project-team-item{
-    width: 272px;
+    width: 88%;
   }
   .project-text{
-    width: 272px;
+    width: 88%;
   }
   .project-text-item{
     margin: 0;
   }
   .project-video{
-    width: 272px;
-    height: 153px;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 15%;
   }
   .underline{
     text-decoration: underline;
   }
   .additional-item-vert{
-    width: 272px;
+    width: 88%;
     height: auto;
     margin: 0 auto;
   }
   .additional-item-sound{
-    width: 272px;
+    width: 88%;
     height: 60px;
   }
 }
