@@ -237,13 +237,11 @@ a{
   .underline{
     text-decoration: underline;
   }
-  .additional-item-vert{
-    width: 88%;
-    height: auto;
-    margin: 0 auto;
-  }
   .additional-item-sound{
     width: 88%;
     height: 60px;
+  }
+  .leftcor{
+    margin-left: -10px;
   }
 }
