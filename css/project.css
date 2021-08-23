@@ -155,9 +155,6 @@ margin: 0;
 }
 
 @media only screen and (min-width: 501px) and (max-width: 1023px) {
-.flexslider{
-  width: 530px;
-}
 p {
   font-size: 14px;
 }
@@ -196,9 +193,6 @@ a{
 
 /* Mobile Styles */
 @media only screen and (max-width: 500px){
-  .flexslider{
-    width: 280px;
-  }
   p {
     font-size: 12px;
   }
