@@ -2,7 +2,7 @@ var audio = ["sound/truecs/1.wav", "sound/truecs/2.wav", "sound/truecs/3.wav", "
 
 $(document).ready(function(){
   $('.category-container #topselection').addClass('textColor');
-  if ($(window).width() <= 400) {
+  if ($(window).width() <= 500) {
   if($("#german").is(':checked')){
       $('.german-text').show();
       $('.english-text').hide();
