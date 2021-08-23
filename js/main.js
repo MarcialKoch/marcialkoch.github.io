@@ -69,7 +69,7 @@ $('.year-container .year').click(function(){
     }
 });
 
-if ($(window).width() <= 414) {
+if ($(window).width() <= 500) {
 $('#german').click(function() {
     $('.german-text').show();
     $('.english-text').hide();
