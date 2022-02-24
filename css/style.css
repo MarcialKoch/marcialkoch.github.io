@@ -7,6 +7,7 @@
 
 body{
   font-size: 20px;
+  color: #ff6114;
 }
 
 a {
@@ -35,6 +36,18 @@ h2{
   font-size: 1.2em;
 }
 
+h3{
+  font-size: 1em;
+  margin-top: 1.5em;
+}
+
+h4{
+  font-size: 0.8em;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+}
+
 .menu-container {
   color: #ff6114;
   padding: 40px 0px 0px 0px;
@@ -48,7 +61,7 @@ h2{
   display: flex;
   flex-direction: column;
   position: fixed;
-  left: 20px;
+  left: 1em;
   font-weight: 700;
   font-size: 0.9em;
 }
@@ -57,7 +70,7 @@ h2{
   display: flex;
   flex-direction: column;
   position: fixed;
-  right: 20px;
+  right: 1em;
   font-weight: 700;
   font-size: 0.9em;
 }
@@ -113,6 +126,15 @@ h2{
   margin: 0 auto;
 }
 
+.lineabout {
+    height: 1px;
+    width: 78.5%;
+    border-color: transparent;
+    background-color: #ff6114;
+    border-width: 0px;
+    margin: 0 auto;
+  }
+
 .project-item{
   margin: 5px 5px;
   flex: 1;
@@ -163,10 +185,8 @@ visibility: visible;
 }
 
 .about-picture{
-  width: 307px;
-  height: 460px;
   background-color: blue;
-  margin: 5px 40px 0px 5px;
+  margin: 5px 0px 0px 5px;
 }
 
 .contact-link{
@@ -176,21 +196,43 @@ visibility: visible;
   margin-left: 5px;
 }
 
+.bio-container{
+  margin: 25px 0px 0px 5px;
+}
+
+.bio-text{
+  margin-top: 15px;
+  list-style-type: none;
+}
+
 .about-text-item {
-  width: 350px;
-  margin: 5px 82px 5px 0px;
+  font-size: 0.8em;
+  margin: 20px 0px 5px 0px;
+  width: 47%;
 }
 
 .about-text-item:last-of-type{
-  margin: 5px 0px 5px 0px;
+  margin:20px 0px 5px 0px;
 }
 
 .about-text{
-  width: 782px;
-  margin-bottom: 20px;
   color: #ff6114;
   display: flex;
   justify-content: flex-start;
+}
+
+.between{
+    width: 6%;
+  }
+
+.bio-text-item{
+  font-size: 0.8em;
+  color: #ff6114;
+}
+
+.picture-container{
+  width: 27%;
+  margin-right: 3%;
 }
 
 .hover {
@@ -202,28 +244,27 @@ visibility: visible;
 }
 
 .project-info-language {
-  width: 350px;
+  width: 53%;
   font-weight: 700;
   font-size: 0.8em;
-  margin-right: 82px;
   display: inline-block;
-  height: 5px;
 
 }
 
 .project-info-language:last-of-type{
 margin-right: 0;
+width: 0%;
 }
 
 .button-container{
-  width: 782px;
-  display: flex;
+  width: 69.5%;
   position: relative;
   flex-wrap: wrap;
 }
 
 input[type=radio] {
 opacity: 0;
+width: 0;
 }
 
 .endofpage{
@@ -234,21 +275,17 @@ opacity: 0;
 }
 
 @media only screen and (max-width: 1340px){
-  body{
-    font-size: 18px;
-  }
+
 }
 
 @media only screen and (max-width: 1220px){
-  body{
-    font-size: 16px;
-  }
+
 }
 
 /* Tablet Styles */
-@media only screen and (min-width: 501px) and (max-width: 1023px){
+@media only screen and (min-width: 641px) and (max-width: 1007px){
   body{
-    font-size: 16px;
+    font-size: 17.5px;
   }
   .menu{
     width: 68%;
@@ -262,37 +299,12 @@ opacity: 0;
   .project-grid-container{
     margin-top: 20px;
   }
-  .project-info-language{
-    width: 236px;
-    margin-right: 50px;
-  }
-  .picture-container{
-    width: 532px;
-  }
   .contact-link{
     width: 300px;
     float: left;
     font-size: 16px;
   }
-  .about-picture{
-    width: 100px;
-    height: 150px;
-    margin-bottom: 20px;
-    margin-right: 20px;
-    float: left;
-  }
-  .about-text{
-    width: 522px;
-    margin-left: 5px;
-  }
-  .button-container{
-    width: 522px;
-  }
-  .about-text-item{
-    width: 240px;
-    margin: 5px 50px 5px 0px;
-    font-size: 14px;
-  }
+
   .project-item-wrap{
     width: 50%;
     height: auto;
@@ -300,9 +312,9 @@ opacity: 0;
 }
 
 /* Mobile Styles */
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 640px){
   body{
-    font-size: 16px;
+    font-size: 15px;
   }
   .menu{
     width: 88%;
@@ -313,6 +325,7 @@ opacity: 0;
   }
   .project-info-language {
     color: #282828;
+    width: 20%;
   }
   .line{
     width: 88%;
@@ -322,9 +335,6 @@ opacity: 0;
   }
   .project-grid-container{
     margin-top: 20px;
-  }
-  .project-info-language{
-    width: 50px;
   }
   .project-item-wrap{
     width: 50%;
@@ -340,24 +350,11 @@ opacity: 0;
       width: 120px;
       float: left;
     }
-    .about-picture{
-      width: 100px;
-      height: 150px;
-      margin-right: 10px;
-      margin-bottom: 20px;
-      float: left;
-    }
-    .about-text{
-      width: 272px;
-      margin-left: 5px;
-    }
     .about-text-item{
-      width: 272px;
-      margin: 0;
-      font-size: 12px;
+      width: 100%;
     }
-    .about-text-item:last-of-type{
-      margin: 0;
+    .between{
+      width: 0;
     }
     .underline{
       text-decoration: underline;

@@ -1,8 +1,8 @@
 var audio = ["sound/truecs/1.wav", "sound/truecs/2.wav", "sound/truecs/3.wav", "sound/truecs/4.wav", "sound/truecs/5.wav", "sound/truecs/6.wav", "sound/truecs/7.wav", "sound/truecs/8.wav", "sound/truecs/9.wav", "sound/truecs/10.wav", "sound/truecs/11.wav", "sound/truecs/12.wav", "sound/truecs/13.wav", "sound/truecs/14.wav"];
 
 $(document).ready(function(){
-  $('.category-container #topselection').addClass('textColor');
-  if ($(window).width() <= 500) {
+  $('.category-container #allprojects').addClass('textColor');
+  if ($(window).width() <= 640) {
   if($("#german").is(':checked')){
       $('.german-text').show();
       $('.english-text').hide();
@@ -12,6 +12,11 @@ $(document).ready(function(){
       $('.english-text').show();
     }
   }
+
+});
+
+$(window).resize(function() {
+   location.reload();
 });
 
 $('.category-container .category').click(function(){
@@ -69,7 +74,7 @@ $('.year-container .year').click(function(){
     }
 });
 
-if ($(window).width() <= 500) {
+if ($(window).width() <= 640) {
 $('#german').click(function() {
     $('.german-text').show();
     $('.english-text').hide();

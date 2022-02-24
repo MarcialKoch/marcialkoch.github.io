@@ -4,23 +4,32 @@
   margin: 5px 5px;
   cursor: pointer;
 }
+body{
+  font-size: 20px;
+}
 
 p{
-  font-size: 16px;
+  font-size: 0.8em;
 }
 
 a{
   cursor: pointer;
 }
 
+.topbar{
+  font-size: 1em;
+}
+
 .slideshow-text1{
   margin: 0px 4px;
   width: 100%;
+  font-size: 0.8em;
 }
 
 .slideshow-text2{
   margin: 0px 4px;
   width: 100%;
+  font-size: 0.8em;
 }
 
 .project-info-container {
@@ -39,24 +48,29 @@ a{
 }
 
 .project-info-item {
-width: 78.5%;
-margin-right: 200px;
+width: 47%;
 font-weight: 400;
 }
 
+.between{
+    width: 6%;
+  }
+
 .project-info-language {
-width: 465px;
-margin-right: 200px;
+width: 53%;
 font-weight: 700;
-font-size: 16px;
+font-size: 0.8em;
 }
 
 input[type=radio] {
 opacity: 0;
+display: none;
+
 }
 
 .project-info-language:last-of-type {
-margin: 0;
+width: 0;
+margin-right: 0;
 }
 
 .project-info-item:last-of-type {
@@ -80,7 +94,7 @@ margin: 0;
   font-family: 'Inter', sans-serif;
   width: 78.5%;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 0.8em;
 }
 
 .project-exhibited {
@@ -116,8 +130,7 @@ border-style: solid;
 }
 
 .project-text-item {
-width: 465px;
-margin-right: 200px;
+width: 47%;
 }
 
 .project-text-item:last-of-type {
@@ -154,21 +167,12 @@ margin: 0;
   background-color: #ff6114;
 }
 
-@media only screen and (min-width: 501px) and (max-width: 1023px) {
-p {
-  font-size: 14px;
-}
-a{
-  font-size: 14px;
-}
-.project-info-language{
-  margin-right: 100px;
+@media only screen and (min-width: 641px) and (max-width: 1007px) {
+body {
+  font-size: 17.5px;
 }
 .project-info{
   width: 68%;
-}
-.project-info-item{
-  margin-right: 100px;
 }
 .project-team-item{
   width: 68%;
@@ -176,11 +180,9 @@ a{
 .project-text{
   width: 68%;
 }
-.project-text-item{
-  margin-right: 100px;
-}
 .project-video{
   width: 100%;
+  margin-top: -8em;
 }
 .additional-item-vert{
   height: 348px;
@@ -192,27 +194,25 @@ a{
 }
 
 /* Mobile Styles */
-@media only screen and (max-width: 500px){
-  p {
-    font-size: 12px;
-  }
-  .project-team-item{
-    font-size: 12px;
-  }
-  .slideshow-text1{
-    font-size: 12px;
-  }
-  .slideshow-text2{
-    font-size: 12px;
-  }
+@media only screen and (max-width: 640px){
+body{
+  font-size: 15px;
+}
   .project-info-language{
-    margin-right: 100px;
+    width: 20%;
+  }
+  .between{
+    width: 0;
+  }
+  #englishbutton{
+    display: flex;
+    justify-content: flex-end;
   }
   .project-info{
     width: 88%;
   }
   .project-info-item{
-    width: 88%;
+    width: 100%;
     margin: 0;
   }
   .project-team-item{
@@ -225,6 +225,7 @@ a{
     width: 88%;
   }
   .project-text-item{
+    width: 100%;
     margin: 0;
   }
   .project-video{
