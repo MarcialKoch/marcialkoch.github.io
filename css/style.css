@@ -327,6 +327,10 @@ width: 0;
     color: #282828;
     width: 20%;
   }
+  #englishbutton{
+    display: flex;
+    justify-content: flex-end;
+  }
   .english-text{
    display: none;
   }
