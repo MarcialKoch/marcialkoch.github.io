@@ -327,6 +327,9 @@ width: 0;
     color: #282828;
     width: 20%;
   }
+  .english-text{
+   display: none;
+  }
   .line{
     width: 88%;
   }

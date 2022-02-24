@@ -204,6 +204,7 @@ body{
   .between{
     width: 0;
   }
+
   #englishbutton{
     display: flex;
     justify-content: flex-end;
@@ -235,6 +236,7 @@ body{
   }
   .underline{
     text-decoration: underline;
+    color: #ff6114;
   }
   .additional-item-sound{
     width: 88%;
