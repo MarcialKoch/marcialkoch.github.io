@@ -7,10 +7,11 @@ $(document).ready(function(){
       $('.german-text').show();
       $('.english-text').hide();
       $('#germanbutton').addClass('underline');
-}  else{
-      $('.german-text').hide();
-      $('.english-text').show();
+}
     }
+    else{
+          $('.german-text').show();
+          $('.english-text').show();
   }
 
 });
@@ -73,30 +74,22 @@ $('.year-container .year').click(function(){
     }
 });
 
-function resizeButton() {
-if ($(window).width() <= 640) {
-  $('.german-text').show();
-  $('.english-text').hide();
-  $('#germanbutton').addClass('underline');
-  $('#englishbutton').removeClass('underline');
 $('#german').click(function() {
+  if ($(window).width() <= 640) {
     $('.german-text').show();
     $('.english-text').hide();
     $('#germanbutton').addClass('underline');
     $('#englishbutton').removeClass('underline');
+}
 });
 $('#english').click(function() {
+    if ($(window).width() <= 640) {
     $('.german-text').hide();
     $('.english-text').show();
     $('#englishbutton').addClass('underline');
     $('#germanbutton').removeClass('underline');
+}
 });
-}
-else{
-  $('.german-text').show();
-  $('.english-text').show();
-}
-}
 
 $(window).bind('resize', resizeButton);
 
