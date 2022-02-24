@@ -264,7 +264,7 @@ width: 0%;
 
 input[type=radio] {
 opacity: 0;
-width: 0;
+display: none;
 }
 
 .endofpage{
@@ -326,6 +326,9 @@ width: 0;
   .project-info-language {
     color: #282828;
     width: 20%;
+  }
+  .about-text{
+    width: 100%;
   }
   #englishbutton{
     display: flex;
