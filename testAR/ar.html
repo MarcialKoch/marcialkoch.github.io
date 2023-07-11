@@ -34,9 +34,7 @@
 
         btn.onclick = () => {
           // Here you will add path to local file you have
-          const audio = new Audio(
-            "assets/noaudio.mp3"
-          );
+          const audio = new Audio("assets/noaudio.mp3");
           btn.style.display = 'none';
           audio.play();
         };
@@ -46,12 +44,10 @@
               let audio2 = document.querySelector("#sound2");
                  if (document.querySelector('#ar1').object3D.visible == true) {
                    new Audio("assets/audio1.mp3").play()
-                    audio1.play();
                     window.alert('AR1');
                 }
                 else if (document.querySelector('#ar2').object3D.visible == true) {
                   new Audio("assets/audio2.mp3").play()
-                   audio2.play();
                    window.alert('AR2');
                }
                 else {
