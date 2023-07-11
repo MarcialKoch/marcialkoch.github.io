@@ -46,9 +46,11 @@
               let audio2 = document.querySelector("#sound2");
                  if (document.querySelector('#ar1').object3D.visible == true) {
                     audio1.play();
+                    window.alert('AR1');
                 }
                 else if (document.querySelector('#ar2').object3D.visible == true) {
                    audio2.play();
+                   window.alert('AR2');
                }
                 else {
                   audio1.pause();
