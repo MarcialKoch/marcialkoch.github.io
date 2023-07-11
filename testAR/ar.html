@@ -43,11 +43,11 @@
               let audio1 = document.querySelector("#sound1");
               let audio2 = document.querySelector("#sound2");
                  if (document.querySelector('#ar1').object3D.visible == true) {
-                   new Audio("assets/audio1.mp3").play()
+                    audio1.play();
                     window.alert('AR1');
                 }
                 else if (document.querySelector('#ar2').object3D.visible == true) {
-                  new Audio("assets/audio2.mp3").play()
+                   audio2.play();
                    window.alert('AR2');
                }
                 else {
