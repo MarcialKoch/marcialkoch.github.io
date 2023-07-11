@@ -4,6 +4,9 @@
     <!-- we import arjs version without NFT but with marker + location based support -->
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
     <body style="margin : 0px; overflow: hidden;">
+      <div id="app" style='position: fixed; top: 10px; width:100%; text-align: center; z-index: 1;'>
+        <button id="btn">Play Sound</button>
+      </div>
         <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; patternRatio: 0.9;'>
           <a-assets>
                <audio id="sound1" src="assets/audio1.mp3" preload="auto"></audio>
@@ -27,12 +30,24 @@
         </a-scene>
 
         <script>
+        const btn = document.getElementById("btn");
+
+        btn.onclick = () => {
+          // Here you will add path to local file you have
+          const audio = new Audio(
+            "assets/noaudio.mp3"
+          );
+          btn.style.display = 'none';
+          audio.play();
+        };
         AFRAME.registerComponent('soundhandler', {
             tick: function () {
               let audio1 = document.querySelector("#sound1");
               let audio2 = document.querySelector("#sound2");
                  if (document.querySelector('#ar1').object3D.visible == true) {
+                   audio1.addEventListener('click', () => {
                     audio1.play();
+                  });
                 }
                 else if (document.querySelector('#ar2').object3D.visible == true) {
                    audio2.play();
