@@ -7,59 +7,18 @@
       <div id="app" style='position: fixed; top: 10px; width:100%; text-align: center; z-index: 1;'>
         <button id="btn">Play Sound</button>
       </div>
-        <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; patternRatio: 0.9;'>
-          <a-assets>
-               <audio id="sound1" src="assets/audio1.mp3" preload="auto"></audio>
-               <audio id="sound2" src="assets/audio2.mp3" preload="auto"></audio>
-           </a-assets>
-       <!-- sound 1 -->
-        <a-marker id="ar1" preset='costum' type='pattern' url='assets/star.patt'>
-            <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
-            <a-box position='0 0.5 0' material='opacity: 0;' soundhandler="target: #sound1">
-            </a-box>
-        </a-marker>
 
-<!-- sound 2 -->
-        <a-marker id="ar2" preset='costum' type='pattern' url='assets/circle.patt'>
-            <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
-            <a-box position='0 0.5 0' material='opacity: 0;' soundhandler="target: #sound2">
-            </a-box>
-        </a-marker>
-        <a-entity sound="src: #sound1" autoplay="false"></a-entity>
-        <a-entity sound="src: #sound2" autoplay="false"></a-entity>
-        </a-scene>
+    <script type="text/javascript">
+const audio = new Audio("assets/audio1.mp3");
+const buttons = document.querySelectorAll("button");
 
-        <script>
-        const btn = document.getElementById("btn");
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    button.style.display = 'none';
+    audio.play();
+  });
+});
 
-        btn.onclick = () => {
-          // Here you will add path to local file you have
-          const audio = new Audio("assets/noaudio.mp3");
-          btn.style.display = 'none';
-          audio.play();
-        };
-        AFRAME.registerComponent('soundhandler', {
-            tick: function () {
-              let audio1 = document.querySelector("#sound1");
-              let audio2 = document.querySelector("#sound2");
-                 if (document.querySelector('#ar1').object3D.visible == true) {
-                    audio1.play();
-                    window.alert('AR1');
-                }
-                else if (document.querySelector('#ar2').object3D.visible == true) {
-                   audio2.play();
-                   window.alert('AR2');
-               }
-                else {
-                  audio1.pause();
-                  audio1.currentTime = 0;
-                  audio2.pause();
-                  audio2.currentTime = 0;
-                }
-
-             }
-
-        });
-        </script>
-    </body>
+</script>
+</body>
 </html>
