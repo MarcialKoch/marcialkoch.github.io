@@ -12,61 +12,61 @@
      <!-- Wasser00 -->
       <a-marker id="w0" preset='costum' type='pattern' url='assets/Wasser_00.patt'>
           <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
-          <a-box position='0 0.5 0' material='opacity: 10;'soundhandler>
+          <a-box position='0 0.5 0' material='opacity: 0;'soundhandler>
           </a-box>
       </a-marker>
 
 <!-- Wasser01 -->
       <a-marker id="w1" preset='costum' type='pattern' url='assets/Wasser_01.patt'>
           <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
-          <a-box position='0 0.5 0' material='opacity: 10;'soundhandler>
+          <a-box position='0 0.5 0' material='opacity: 0;'soundhandler>
           </a-box>
       </a-marker>
 
 <!-- Wasser03 -->
-<a-marker id="w3" preset='costum' type='pattern' url='assets/Wasser_03.patt'>
+<a-marker id="w2" preset='costum' type='pattern' url='assets/Wasser_02.patt'>
   <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
   <a-box position='0 0.5 0' material='opacity: 0;'soundhandler>
   </a-box>
 </a-marker>
 
 <!-- Wasser04 -->
-<a-marker id="w4" preset='costum' type='pattern' url='assets/Wasser_04.patt'>
+<a-marker id="w3" preset='costum' type='pattern' url='assets/Wasser_03.patt'>
   <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
   <a-box position='0 0.5 0' material='opacity: 0;'soundhandler>
   </a-box>
 </a-marker>
 
 <!-- Wasser05 -->
-<a-marker id="w5" preset='costum' type='pattern' url='assets/Wasser_05.patt'>
+<a-marker id="w4" preset='costum' type='pattern' url='assets/Wasser_04.patt'>
   <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
   <a-box position='0 0.5 0' material='opacity: 0;'soundhandler>
   </a-box>
 </a-marker>
 
 <!-- Wasser06 -->
-<a-marker id="w6" preset='costum' type='pattern' url='assets/Wasser_06.patt'>
+<a-marker id="w5" preset='costum' type='pattern' url='assets/Wasser_05.patt'>
   <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
   <a-box position='0 0.5 0' material='opacity: 0;'soundhandler>
   </a-box>
 </a-marker>
 
 <!-- Wasser07 -->
-<a-marker id="w7" preset='costum' type='pattern' url='assets/Wasser_07.patt'>
+<a-marker id="w6" preset='costum' type='pattern' url='assets/Wasser_06.patt'>
   <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
   <a-box position='0 0.5 0' material='opacity: 0;'soundhandler>
   </a-box>
 </a-marker>
 
 <!-- Wasser08 -->
-<a-marker id="w8" preset='costum' type='pattern' url='assets/Wasser_08.patt'>
+<a-marker id="w7" preset='costum' type='pattern' url='assets/Wasser_07.patt'>
   <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
   <a-box position='0 0.5 0' material='opacity: 0;'soundhandler>
   </a-box>
 </a-marker>
 
 <!-- Wasser09 -->
-<a-marker id="w9" preset='costum' type='pattern' url='assets/Wasser_09.patt'>
+<a-marker id="w8" preset='costum' type='pattern' url='assets/Wasser_08.patt'>
   <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
   <a-box position='0 0.5 0' material='opacity: 0;'soundhandler>
   </a-box>
@@ -80,13 +80,13 @@ const audio = new Audio("assets/noaudio.mp3");
 const buttons = document.querySelectorAll("button");
 const audioW0 = new Audio("assets/Wasser_00.mp3");
 const audioW1 = new Audio("assets/Wasser_01.mp3");
+const audioW2 = new Audio("assets/Wasser_02.mp3");
 const audioW3 = new Audio("assets/Wasser_03.mp3");
 const audioW4 = new Audio("assets/Wasser_04.mp3");
 const audioW5 = new Audio("assets/Wasser_05.mp3");
 const audioW6 = new Audio("assets/Wasser_06.mp3");
 const audioW7 = new Audio("assets/Wasser_07.mp3");
 const audioW8 = new Audio("assets/Wasser_08.mp3");
-const audioW9 = new Audio("assets/Wasser_09.mp3");
 var start = false;
 
 buttons.forEach(button => {
@@ -95,13 +95,13 @@ buttons.forEach(button => {
     audio.play();
     audioW0.play();
     audioW1.play();
+    audioW2.play();
     audioW3.play();
     audioW4.play();
     audioW5.play();
     audioW6.play();
     audioW7.play();
     audioW8.play();
-    audioW9.play();
     start = true;
     console.log(start);
   });
@@ -113,54 +113,198 @@ tick: function () {
       if(start){
         // window.alert('AR1');
         audioW0.play();
+        audioW1.pause();
+        audioW1.currentTime = 0;
+        audioW2.pause();
+        audioW2.currentTime = 0;
+        audioW3.pause();
+        audioW3.currentTime = 0;
+        audioW4.pause();
+        audioW4.currentTime = 0;
+        audioW5.pause();
+        audioW5.currentTime = 0;
+        audioW6.pause();
+        audioW6.currentTime = 0;
+        audioW7.pause();
+        audioW7.currentTime = 0;
+        audioW8.pause();
+        audioW8.currentTime = 0;
       }
     }
     else if (document.querySelector('#w1').object3D.visible == true) {
        if(start){
        // window.alert('AR2');
        audioW1.play();
+       audioW0.pause();
+        audioW0.currentTime = 0;
+        audioW2.pause();
+        audioW2.currentTime = 0;
+        audioW3.pause();
+        audioW3.currentTime = 0;
+        audioW4.pause();
+        audioW4.currentTime = 0;
+        audioW5.pause();
+        audioW5.currentTime = 0;
+        audioW6.pause();
+        audioW6.currentTime = 0;
+        audioW7.pause();
+        audioW7.currentTime = 0;
+        audioW8.pause();
+        audioW8.currentTime = 0;
+      }
+   }
+   else if (document.querySelector('#w2').object3D.visible == true) {
+       if(start){
+       // window.alert('AR2');
+       audioW2.play();
+       audioW0.pause();
+        audioW0.currentTime = 0;
+        audioW1.pause();
+        audioW1.currentTime = 0;
+        audioW3.pause();
+        audioW3.currentTime = 0;
+        audioW4.pause();
+        audioW4.currentTime = 0;
+        audioW5.pause();
+        audioW5.currentTime = 0;
+        audioW6.pause();
+        audioW6.currentTime = 0;
+        audioW7.pause();
+        audioW7.currentTime = 0;
+        audioW8.pause();
+        audioW8.currentTime = 0;
       }
    }
    else if (document.querySelector('#w3').object3D.visible == true) {
        if(start){
        // window.alert('AR2');
        audioW3.play();
+       audioW0.pause();
+        audioW0.currentTime = 0;
+        audioW1.pause();
+        audioW1.currentTime = 0;
+        audioW2.pause();
+        audioW2.currentTime = 0;
+        audioW4.pause();
+        audioW4.currentTime = 0;
+        audioW5.pause();
+        audioW5.currentTime = 0;
+        audioW6.pause();
+        audioW6.currentTime = 0;
+        audioW7.pause();
+        audioW7.currentTime = 0;
+        audioW8.pause();
+        audioW8.currentTime = 0;
       }
    }
    else if (document.querySelector('#w4').object3D.visible == true) {
        if(start){
        // window.alert('AR2');
        audioW4.play();
+       audioW0.pause();
+        audioW0.currentTime = 0;
+        audioW1.pause();
+        audioW1.currentTime = 0;
+        audioW2.pause();
+        audioW2.currentTime = 0;
+        audioW3.pause();
+        audioW3.currentTime = 0;
+        audioW5.pause();
+        audioW5.currentTime = 0;
+        audioW6.pause();
+        audioW6.currentTime = 0;
+        audioW7.pause();
+        audioW7.currentTime = 0;
+        audioW8.pause();
+        audioW8.currentTime = 0;
       }
    }
    else if (document.querySelector('#w5').object3D.visible == true) {
        if(start){
        // window.alert('AR2');
        audioW5.play();
+       audioW0.pause();
+        audioW0.currentTime = 0;
+        audioW1.pause();
+        audioW1.currentTime = 0;
+        audioW2.pause();
+        audioW2.currentTime = 0;
+        audioW3.pause();
+        audioW3.currentTime = 0;
+        audioW4.pause();
+        audioW4.currentTime = 0;
+        audioW6.pause();
+        audioW6.currentTime = 0;
+        audioW7.pause();
+        audioW7.currentTime = 0;
+        audioW8.pause();
+        audioW8.currentTime = 0;
       }
    }
    else if (document.querySelector('#w6').object3D.visible == true) {
        if(start){
        // window.alert('AR2');
        audioW6.play();
+       audioW0.pause();
+        audioW0.currentTime = 0;
+        audioW1.pause();
+        audioW1.currentTime = 0;
+        audioW2.pause();
+        audioW2.currentTime = 0;
+        audioW3.pause();
+        audioW3.currentTime = 0;
+        audioW4.pause();
+        audioW4.currentTime = 0;
+        audioW5.pause();
+        audioW5.currentTime = 0;
+        audioW7.pause();
+        audioW7.currentTime = 0;
+        audioW8.pause();
+        audioW8.currentTime = 0;
       }
    }
    else if (document.querySelector('#w7').object3D.visible == true) {
        if(start){
        // window.alert('AR2');
        audioW7.play();
+       audioW0.pause();
+        audioW0.currentTime = 0;
+        audioW1.pause();
+        audioW1.currentTime = 0;
+        audioW2.pause();
+        audioW2.currentTime = 0;
+        audioW3.pause();
+        audioW3.currentTime = 0;
+        audioW4.pause();
+        audioW4.currentTime = 0;
+        audioW5.pause();
+        audioW5.currentTime = 0;
+        audioW6.pause();
+        audioW6.currentTime = 0;
+        audioW8.pause();
+        audioW8.currentTime = 0;
       }
    }
    else if (document.querySelector('#w8').object3D.visible == true) {
        if(start){
        // window.alert('AR2');
        audioW8.play();
-      }
-   }
-   else if (document.querySelector('#w9').object3D.visible == true) {
-       if(start){
-       // window.alert('AR2');
-       audioW9.play();
+       audioW0.pause();
+        audioW0.currentTime = 0;
+        audioW1.pause();
+        audioW1.currentTime = 0;
+        audioW2.pause();
+        audioW2.currentTime = 0;
+        audioW3.pause();
+        audioW3.currentTime = 0;
+        audioW4.pause();
+        audioW4.currentTime = 0;
+        audioW5.pause();
+        audioW5.currentTime = 0;
+        audioW6.pause();
+        audioW6.currentTime = 0;
+        audioW7.pause();
+        audioW7.currentTime = 0;
       }
    }
     else {
@@ -169,6 +313,8 @@ tick: function () {
       audioW0.currentTime = 0;
       audioW1.pause();
       audioW1.currentTime = 0;
+      audioW2.pause();
+      audioW2.currentTime = 0;
       audioW3.pause();
       audioW3.currentTime = 0;
       audioW4.pause();
@@ -181,8 +327,6 @@ tick: function () {
       audioW7.currentTime = 0;
       audioW8.pause();
       audioW8.currentTime = 0;
-      audioW9.pause();
-      audioW9.currentTime = 0;
     }
     }
  }
