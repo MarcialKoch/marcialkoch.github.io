@@ -8,7 +8,8 @@
         <button id="btn">Play Sound</button>
       </div>
 
-      <a-scene test embedded arjs='sourceType: webcam; debugUIEnabled: false; patternRatio: 0.67;'>
+      <a-scene test embedded arjs='sourceType: webcam; debugUIEnabled: false; patternRatio: 0.9;'>
+        <!-- <a-scene test embedded arjs='sourceType: webcam; debugUIEnabled: false; patternRatio: 0.9;'> -->
      <!-- Wasser00 -->
       <a-marker id="w0" preset='costum' type='pattern' url='assets/Wasser_00.patt'>
           <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
@@ -66,9 +67,9 @@
 </a-marker>
 
 <!-- Wasser09 -->
-<a-marker id="w8" preset='costum' type='pattern' url='assets/Wasser_08.patt'>
+<a-marker id="w8" preset='costum' type='pattern' url='assets/Wasser_test.patt'>
   <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
-  <a-box position='0 0.5 0' material='opacity: 0;'soundhandler>
+  <a-box position='0 0.5 0' material='opacity: 1;'soundhandler>
   </a-box>
 </a-marker>
       </a-scene>
