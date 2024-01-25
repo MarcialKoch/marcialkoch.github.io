@@ -109,7 +109,7 @@
 const audio = new Audio("assets/noaudio.mp3");
 const buttons = document.querySelectorAll("button");
 const audioW0 = new Audio("assets/Wasser_00.mp3");
-const audioW1 = new Audio("assets/Wasser_00.mp3");
+const audioW1 = new Audio("assets/Wasser_01.mp3");
 const audioW2 = new Audio("assets/Wasser_02.mp3");
 const audioW3 = new Audio("assets/Wasser_03.mp3");
 const audioW4 = new Audio("assets/Wasser_04.mp3");
@@ -164,9 +164,9 @@ tick: function () {
     else if (document.querySelector('#w1').object3D.visible == true) {
        if(start){
        // window.alert('AR2');
-       audioW1.play();
-       audioW0.pause();
-        audioW0.currentTime = 0;
+       audioW0.play();
+       audioW1.pause();
+        audioW1.currentTime = 0;
         audioW2.pause();
         audioW2.currentTime = 0;
         audioW3.pause();
