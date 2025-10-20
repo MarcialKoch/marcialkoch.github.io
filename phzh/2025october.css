@@ -33,6 +33,13 @@ html, body{
   padding: 0;
 }
 
+.ClickContainer{
+  background-color: #222222;
+  height: calc(100dvh - 48px);
+  margin: 24px;
+  padding: 0;
+}
+
 .InfoButtonRed{
   position: absolute;
   display: flex;
@@ -86,6 +93,25 @@ html, body{
       border: none;
       background-color: white;
       color: #0000FF;
+      font-size: 1.5rem;
+      box-shadow: 0 0 20px rgba(0,0,0,0.7);
+}
+
+.InfoButton{
+  position: absolute;
+  display: flex;
+  font-family: 'Pixelify Sans', sans-serif;
+  vertical-align: center;
+  justify-content: center;
+  align-items: center;
+      top: 40px;
+      right: 40px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: none;
+      background-color: white;
+      color: #222222;
       font-size: 1.5rem;
       box-shadow: 0 0 20px rgba(0,0,0,0.7);
 }
