@@ -21,14 +21,14 @@ html, body{
 
 .ClickContainerGreen{
   background-color: #00FF00;
-  height: calc(100vh - 48px);
+  height: calc(100dvh - 48px);
   margin: 24px;
   padding: 0;
 }
 
 .ClickContainerBlue{
   background-color:  #0000FF;
-  height: calc(100vh - 48px);
+  height: calc(100dvh - 48px);
   margin: 24px;
   padding: 0;
 }
