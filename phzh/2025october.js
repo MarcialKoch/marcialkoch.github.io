@@ -1,4 +1,5 @@
 const texts = [
+  "Inspirationen für den Walk, gerne mit ihrem Nebenmensch diskutieren, tippen 👉 nächste Frage.",
   "Wenn Sie sich etwas wünschen könnten, wie würde das ideale Klassenzimmer aussehen? ",
   "Wenn Sie ein Algorithmus wären, welche Herausforderung im Bildungswesen würden Sie lösen?",
   "Schauen Sie sich um: Was gefällt Ihnen am besten dort, wo Sie sich gerade befinden? Was fällt Ihnen auf?",
