@@ -14,8 +14,7 @@ html, body{
 }
 .ClickContainerRed{
   background-color: #FF0000;
-  height: calc(100vh - 48px);
-  min-height: calc(100dvh - 48px);
+  height: calc(100dvh - 48px);
   margin: 24px;
   padding: 0;
 }
